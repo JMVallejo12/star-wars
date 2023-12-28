@@ -3,24 +3,3 @@
 }
 
 
-.grid-char{
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3 repeat(3, 1fr);
-
-    grid-template-areas: 
-        "img-char info-2 info-3"
-        "info-1 info-2 info-3"
-        "inof-1 info-2 info-3"
-     ;
-
-
-    .img-char{
-        border: 1px solid white;
-        height: 20rem;
-        width: 14rem;
-        margin: 3rem;
-    }
-
-}
