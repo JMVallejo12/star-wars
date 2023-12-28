@@ -1,0 +1,28 @@
+.footer{
+    
+    .nav-bar{
+        display: flex;
+        justify-content: center;
+
+        .nav-item{
+            color: white;
+            
+            .nav-item-icon{
+
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                border: 3px solid white;
+                padding-top: 0.5rem;
+                transition: 0.3s;
+
+                &:hover{
+
+                    transform: translateY(-25px);
+                }
+            }
+
+            
+        }
+    }
+}
