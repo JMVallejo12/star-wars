@@ -9,10 +9,74 @@
 </head>
 <body class="body-char">
 
-    
+    <div class="title-char">ficha de personaje</div>
+
+    <!-- parte de la informacion del personaje -->
+    <section class="info-char">
+        <article class="info-1">
+            <h2 class="h2-info">
+                informacion
+            </h2>
+            <form action="/procesar_formulario" method="post" class="form-char">
+                <label for="name" class="label-style">Nombre:</label>
+                <input type="text" id="name" name="name" required class="label-input">
+            
+                <label for="species" class="label-style">Especie:</label>
+                <input type="text" id="species" name="species" required class="label-input">
+            
+                <label for="gender" class="label-style">Genero:</label>
+                <input type="text" id="gender" name="gender" required class="label-input">
+            
+                <label for="age" class="label-style">Edad:</label>
+                <input type="number" id="age" name="age" required class="label-input">
+            
+                <label for="affiliation" class="label-style">Afiliacion:</label>
+                <input type="text" id="affiliation" name="affiliation" required class="label-input">
+            
+                <label for="occupation" class="label-style">ocupacion:</label>
+                <input type="text" id="occupation" name="occupation" required class="label-input">
+            
+                <label for="background" class="label-style">Trasfondo:</label>
+                <textarea id="background" name="background" required class="label-text-area"></textarea>
+            
+            
+              </form>
+        </article>
+
+        <!-- parte de la foto -->
+        <article class="char-pic">
+            <div class="img-char-container">
+
+            </div>
+        </article>
+
+        <!-- parte de rasgos y demas -->
+        <article class="more-char">
+            <div class="planets">
+                <label for="planets">Selecciona un planeta de Star Wars:</label>
+                <select id="planets" name="planets">
+                  <option value="tatooine">Tatooine</option>
+                  <option value="coruscant">Coruscant</option>
+                  <option value="endor">Endor</option>
+                  <option value="hoth">Hoth</option>
+                  <option value="naboo">Naboo</option>
+                  <option value="kashyyyk">Kashyyyk</option>
+                  <option value="mustafar">Mustafar</option>
+                  <option value="geonosis">Geonosis</option>
+                  <option value="kamino">Kamino</option>
+                  <option value="jakku">Jakku</option>
+                  <option value="ahch-to">Ahch-To</option>
+                  <option value="dagobah">Dagobah</option>
+                  <option value="bespin">Bespin</option>
+                  <option value="lothal">Lothal</option>
+                  <option value="mandalore">Mandalore</option>
+                </select>
+            </div>
+        </article>
+    </section>
 
 
-    <footer class="footer">
+    <footer class="footer-2">
         <nav class="nav-bar">
             <div><a href="" class="nav-item" id="nav-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-rocket-fill nav-item-icon" viewBox="0 0 16 16">

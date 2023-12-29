@@ -1,0 +1,106 @@
+{
+    "characters": [
+      {
+        "name": "Character1",
+        "type": "Warrior",
+        "level": 1
+      },
+      {
+        "name": "Character2",
+        "type": "Mage",
+        "level": 2
+      }
+    ],
+    "skills": [
+      {
+        "name": "telequinesis",
+        "type": "attack",
+        "damage": 10,
+        "level": 0
+      },
+      {
+        "name": "persuasion Jedi",
+        "type": "sneak",
+        "level": 0,
+      },
+      {
+        "name": "sentir la Fuerza",
+        "type": "defense",
+        "level": 0
+      },
+      {
+        "name": "velocidad",
+        "type": "attack",
+        "level": 0
+      },
+      {
+        "name": "reflejos",
+        "type": "defense",
+        "level": 0
+        },
+        {
+            "name": "combate con sable",
+            "type": "attack",
+            "level": 0
+        },
+        {
+            "name": "combate cuerpo a cuerpo",
+            "type": "attack",
+            "level": 0
+        },
+        {
+            "name": "reparacion y modificacion de naves",
+            "type": "tech",
+            "level": 0
+        },
+        {
+            "name": "hacking y habilidades informaticas",
+            "type": "tech",
+            "level": 0
+        },
+        {
+            "name": "conocimientos avanzados de tecnologia",
+            "type": "tech",
+            "level": 0
+        },
+        {
+            "name": "disparo",
+            "type": "attack",
+            "level": 0
+
+        },
+        {
+            "name": "pilotaje",
+            "type": "pilot",
+            "level": 0
+        },
+        {
+            "name": "sigilo",
+            "type": "sneak",
+            "level": 0
+        },
+        {
+            "name": "ocultacion",
+            "type": "sneak",
+            "level": 0
+        },
+        {
+            "name": "supervivencia",
+            "type": "survive",
+            "level": 0
+        },
+        
+
+    ],
+    "powers": [
+      {
+        "name": "Super Strength",
+        "description": "Increases physical strength by 50%"
+      },
+      {
+        "name": "Invisibility",
+        "description": "Allows the character to become invisible for a short duration"
+      }
+    ]
+  }
+  
