@@ -2,14 +2,16 @@
     "characters": [
       {
         "name": "Character1",
-        "type": "Warrior",
-        "level": 1
-      },
-      {
-        "name": "Character2",
-        "type": "Mage",
-        "level": 2
+        "race": "Warrior",
+        "gender": "none",
+        "age": 0,
+        "facc": "none",
+        "job": "none",
+        "level": 1,
+        "story": "none",
+        "planet": "none"
       }
+     
     ],
     "skills": [
       {
@@ -21,7 +23,7 @@
       {
         "name": "persuasion Jedi",
         "type": "sneak",
-        "level": 0,
+        "level": 0
       },
       {
         "name": "sentir la Fuerza",
@@ -89,7 +91,31 @@
             "type": "survive",
             "level": 0
         },
-        
+        {
+          "name": "habilidades medicas",
+          "type": "heal",
+          "level": 0
+        },
+        {
+          "name": "rastreo",
+          "type": "sneak",
+          "level": 0
+        },
+        {
+          "name": "artes marciales",
+          "type": "attack",
+          "level": 0
+        },
+        {
+          "name": "fuerza",
+          "type": "attack",
+          "level": 0
+        },
+        {
+          "name": "agilidad",
+          "type": "defense",
+          "level": 0
+        }
 
     ],
     "powers": [

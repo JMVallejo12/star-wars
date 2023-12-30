@@ -21,8 +21,19 @@
                 <label for="name" class="label-style">Nombre:</label>
                 <input type="text" id="name" name="name" required class="label-input">
             
-                <label for="species" class="label-style">Especie:</label>
-                <input type="text" id="species" name="species" required class="label-input">
+                <label for="razas" class="label-style">Razas:</label>
+                <select class="label-input" id="race">
+                  <option value="human">Humanos</option>
+                  <option value="wookiees">Wookiees</option>
+                  <option value="twileks">Twi'leks</option>
+                  <option value="rodianos">Rodianos</option>
+                  <option value="moncalamari">Mon Calamari</option>
+                  <option value="bothans">Bothans</option>
+                  <option value="hutts">Hutts</option>
+                  <option value="togruta">Togruta</option>
+                  <option value="zabrak">Zabrak</option>
+                  <option value="duros">Duros</option>
+                </select>
             
                 <label for="gender" class="label-style">Genero:</label>
                 <input type="text" id="gender" name="gender" required class="label-input">
@@ -31,10 +42,10 @@
                 <input type="number" id="age" name="age" required class="label-input">
             
                 <label for="affiliation" class="label-style">Afiliacion:</label>
-                <input type="text" id="affiliation" name="affiliation" required class="label-input">
+                <input type="text" id="facc" name="affiliation" required class="label-input">
             
                 <label for="occupation" class="label-style">ocupacion:</label>
-                <input type="text" id="occupation" name="occupation" required class="label-input">
+                <input type="text" id="job" name="occupation" required class="label-input">
             
                 <label for="background" class="label-style">Trasfondo:</label>
                 <textarea id="background" name="background" required class="label-text-area"></textarea>
@@ -52,9 +63,12 @@
 
         <!-- parte de rasgos y demas -->
         <article class="more-char">
+
+            <h2 class="from">origen</h2>
+
             <div class="planets">
-                <label for="planets">Selecciona un planeta de Star Wars:</label>
-                <select id="planets" name="planets">
+                <label for="planets" class="label-style">Planeta de origen:</label>
+                <select id="planet" name="planets">
                   <option value="tatooine">Tatooine</option>
                   <option value="coruscant">Coruscant</option>
                   <option value="endor">Endor</option>
@@ -72,21 +86,36 @@
                   <option value="mandalore">Mandalore</option>
                 </select>
             </div>
+
+            <h2 class="trait">rasgos</h2>
+
+            <div class="trait-container"></div>
         </article>
     </section>
+
+    <!-- mostrando las skills -->
+    <section class="skills">
+        <h2 class="skills-tittle">habilidades</h2>
+        <!-- se generan las habilidades desde javascript -->
+        <div class="skills-container" id="skill-container">
+            
+        </div>
+    </section>
+
 
 
     <footer class="footer-2">
         <nav class="nav-bar">
-            <div><a href="" class="nav-item" id="nav-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-rocket-fill nav-item-icon" viewBox="0 0 16 16">
-                    <path d="M10.175 1.991c.81 1.312 1.583 3.43 1.778 6.819l1.5 1.83A2.5 2.5 0 0 1 14 12.202V15.5a.5.5 0 0 1-.9.3l-1.125-1.5c-.166-.222-.42-.4-.752-.57-.214-.108-.414-.192-.627-.282l-.196-.083C9.7 13.793 8.85 14 8 14c-.85 0-1.7-.207-2.4-.635-.068.03-.133.057-.198.084-.211.089-.411.173-.625.281-.332.17-.586.348-.752.57L2.9 15.8a.5.5 0 0 1-.9-.3v-3.298a2.5 2.5 0 0 1 .548-1.562l.004-.005L4.049 8.81c.197-3.323.969-5.434 1.774-6.756.466-.767.94-1.262 1.31-1.57a3.67 3.67 0 0 1 .601-.41A.549.549 0 0 1 8 0c.101 0 .17.027.25.064.037.017.086.041.145.075.118.066.277.167.463.315.373.297.85.779 1.317 1.537ZM9.5 6c0-1.105-.672-2-1.5-2s-1.5.895-1.5 2S7.172 8 8 8s1.5-.895 1.5-2"/>
-                    <path d="M8 14.5c.5 0 .999-.046 1.479-.139L8.4 15.8a.5.5 0 0 1-.8 0l-1.079-1.439c.48.093.98.139 1.479.139"/>
+            <div><a href="" class="nav-item" id="nav-item" onclick="create_player()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add nav-item-icon" viewBox="0 0 16 16">
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4"/>
                   </svg>
                 </a>
             </div>
         </nav>
     </footer>
-    <script src="../scripts/var_globals.js"></script>
+<script src="../scripts/var_globals.js"></script>
+<script src="../scripts/char_creator.js"></script>
 </body>
 </html>

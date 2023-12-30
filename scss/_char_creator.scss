@@ -1,5 +1,8 @@
 .body-char{
     background-image: url(../assets/bg-2.jpeg);
+    background-repeat: repeat-y;
+    background-color: black;
+    z-index: 1;
 }
 
 .title-char{
@@ -11,11 +14,12 @@
 }
 
 .info-char{
-    border: 1px solid white;
+    // border: 1px solid white;
     display: flex;
+    z-index: 2;
     .info-1{
         width: 35%;
-        border: 1px solid yellow;
+        // border: 1px solid yellow;
         display: flex;
         flex-direction: column;
         padding: 0.5rem;
@@ -55,7 +59,7 @@
     }
 
     .char-pic{
-        border: 1px solid white;
+        // border: 1px solid white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -67,6 +71,57 @@
             width: 350px;
             border: 2px solid red;
         }
+    }
+
+    .more-char{
+        padding: 0.5rem;
+        width: 100%;
+        z-index: 2;
+        .from{
+            font-family: $font-stars;
+            color: white;
+            text-align: center;
+        }
+        .planets{
+            .label-style{
+                font-family: $font-stars;
+                color: white;
+            }
+        }
+        .trait{
+            font-family: $font-stars;
+            color: white;
+            text-align: center;
+            margin-top: 3rem;
+        }
+    }
+}
+
+.skills{
+    z-index: 2;
+    // border: 1px solid yellow;
+    margin-top: 3rem;
+    background-image: url(../assets/bg-2.jpeg);
+    padding: 1rem;
+    .skills-tittle{
+        color: white;
+        font-family: $font-stars;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .skill-card{
+        margin: 0.4rem;
+        color: white;
+        font-family: $font-stars;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+
+        .skill-name{
+            width: 90%;
+        }
+        
     }
 }
 
