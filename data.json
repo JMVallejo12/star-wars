@@ -9,7 +9,12 @@
         "job": "none",
         "level": 1,
         "story": "none",
-        "planet": "none"
+        "planet": "none",
+        "tag": "none",
+        "planet_now": "none",
+        "weapon": "none",
+        "ships": [],
+        "wanted": 0
       }
      
     ],

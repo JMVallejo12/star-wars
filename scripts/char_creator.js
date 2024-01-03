@@ -29,19 +29,32 @@ const char_bg = document.getElementById("background")
 const char_planet = document.getElementById("planet")
 
 
+
 function create_player(){
+
+    event.preventDefault()
 
     fetch(json_url)
     .then(response => response.json())
     .then(data => {
 
         const new_char = {
-            "name" : char_name,
-            "race": char_race,
-            "gender": char_gender,
-            "age": char_age,
+            "name" : char_name.value,
+            "race": char_race.value,
+            "gender": char_gender.value,
+            "age": char_age.value,
+            "fact": char_facc.value,
+            "job": char_job.value,
+            "bg": char_bg.value,
+            "planet": char_planet.value
         }
 
-    })
+        
 
+        localStorage.setItem('myChar', JSON.stringify(new_char))
+
+        window.location.href = "control_panel.html"
+    })
+    .catch(error=>console.log("Error al crear personaje"))
 }
+

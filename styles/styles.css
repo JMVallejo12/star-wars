@@ -48,6 +48,37 @@
   transform: translateY(-25px);
 }
 
+.footer-3 {
+  width: 100%;
+  z-index: 999;
+  padding: 2rem;
+  position: fixed;
+}
+.footer-3 .nav-bar {
+  display: flex;
+  justify-content: center;
+}
+.footer-3 .nav-bar .nav-item {
+  color: white;
+}
+.footer-3 .nav-bar .nav-item .nav-item-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 3px solid white;
+  padding-top: 0.5rem;
+  transition: 0.3s;
+  margin: 0.4rem;
+}
+.footer-3 .nav-bar .nav-item .nav-item-icon:hover {
+  transform: translateY(-25px);
+}
+
+.header {
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
 .body-char {
   background-image: url(../assets/bg-2.jpeg);
   background-repeat: repeat-y;
@@ -153,6 +184,20 @@
 }
 .skills .skill-card .skill-name {
   width: 90%;
+}
+
+.body-control-panel {
+  background-image: url(../assets/bg-control-panel.jpg);
+  background-size: cover;
+}
+
+.main-window {
+  height: 38.2rem;
+  padding: 1rem;
+}
+.main-window .planet-title {
+  border: 1px solid white;
+  height: 50px;
 }
 
 .body-index {
